@@ -1,0 +1,339 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.parallax {
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    background: url(../images/codeline.jpeg) no-repeat 50%;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tint {
+    min-height: 500px;
+    background-color: white;
+    opacity: .55;
+}
+
+#headSect1 {
+    background-color: #6E07F3;
+    height: 65px;
+    box-shadow: inset 0 0 4px black;
+}
+
+.logo, .top-nav {
+    color: whitesmoke;
+    transition: 0.6s ease;
+}
+
+.top-nav:hover {
+    font-size: 22px;
+    color: crimson;
+}
+
+main {
+    background-color: #fff;
+}
+
+.my-container {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.my-container span {
+    display: block;
+}
+
+.text1 {
+    color: #000000;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    /* background: #fff; */
+    position: relative;
+}
+
+.text2 {
+    font-size: 20px;
+    color: black;
+}
+
+
+@media (min-width:768px) {
+    .my-container {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    
+    .my-container span {
+        display: block;
+    }
+    
+    .text1 {
+        color: #000000;
+        font-size: 70px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+        /* background: #fff; */
+        position: relative;
+        animation: text 3s 1;
+    }
+    
+    
+    
+    @keyframes text {
+        0% {
+            color: white;
+            margin-bottom: -40px;
+        }
+    
+        30% {
+            color: whitesmoke;
+            letter-spacing: 25px;
+            margin-bottom: -40px;
+        }
+    
+        85% {
+            color: black;
+            letter-spacing: 8px;
+            margin-bottom: -40px;
+        }
+    }
+    
+    .text2 {
+        font-size: 30px;
+        color: black;
+        font-family: georgia, serif;
+        animation: fade ease 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes fade {
+        0% {
+            
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: 0;
+        }
+    
+        51% {
+            color: black;
+            opacity: .5;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+
+}
+
+#section1 {
+    padding: 50px 0;
+}
+
+@media (max-width:768px) {
+    .text-yap1, .text-yap2 {
+        width: 45%;
+    }
+
+    .handsome {
+        border-radius: 35%;
+    }
+}
+
+@media (min-width:768px) {
+
+    .handsome {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        bottom: -30px;
+        border-radius: 35%;
+        margin-bottom: 40px;
+    }
+
+
+    .about-sub {
+        position: absolute;
+        top: -35px;
+    }
+
+
+    .about-me {
+        box-shadow: inset 0 0 4px black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .my-row {
+        position: relative;
+        height: 400px;
+    }
+
+    .text-yap1 {
+        position: absolute;
+        top: 15px;
+        font-size: 22px;
+        width: 50%;
+    }
+}
+
+.code-link {
+    text-decoration: none;
+    color: #6E07F3;
+    transition: 0.6s ease;
+}
+
+.code-link:hover {
+    font-size: 26px;
+    color: crimson;
+}
+
+.text-yap2 {
+    position: absolute;
+    bottom: 20px;
+    font-size: 22px;
+}
+
+.p-img {
+    position: absolute;
+    width: 325px;
+    height: auto;
+    top: -20px;
+    right: 150px;
+}
+
+#section2 {
+    background-color: whitesmoke;
+    padding:65px 0;
+}
+
+.frame-item, .lang-item {
+    width: 100px;
+    padding: 5px 4px;
+    margin-bottom: 12px;
+    margin-right: 5px;
+    font-size: 16px;
+    background-color: #999;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #444;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%; 
+    justify-content: center;
+    margin: 0 auto;
+    /* border: 1px solid yellow; */
+    list-style-type: none;
+}
+
+#section3 {
+    padding: 15px 0 60px 0;
+}
+
+/* youtube link on how i achieved the hover overlay: https://youtu.be/exb2ab72Xhs?si=zpng3f09uxr_B4Ip */
+
+.img-row {
+    position: relative;
+    /* width: 400px; */
+}
+
+.img-img {
+    display: block;
+    width: 600px;
+    height: auto;
+    border: 5px solid black;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 600px;
+    height: 100%;
+    background: #00000060;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.img-overlay-blur {
+    backdrop-filter: blur(5px);
+}
+
+.img-overlay > * {
+    transform: translateX(-20px);
+    transition: transform 0.25s;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.img-overlay:hover > * {
+    transform: translateX(0);
+}
+
+.img-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.img-desc {
+    color: white;
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+#footSection {
+    background-color: #6E07F3;
+    box-shadow: inset 0 0 4px black;
+    padding: 40px 0;
+}
+
+.btm-text {
+    color: whitesmoke;
+}
+
+.my-icon {
+    color: whitesmoke;
+}
+
+/* .social-link {
+    transition: 0.6s ease;
+}
+
+.social-link:hover {
+    width: 36px;
+    height: 36px;
+    color: crimson;
+} */
