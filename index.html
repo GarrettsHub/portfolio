@@ -14,13 +14,13 @@
     <header class="header" id="header">
         <section class="section" id="headSect1">
             <div class="container top-contain">
-                <div class="row">
-                    <div class="logo text-center text-md-start col-md-4">
+                <div class="row justify-content-between">
+                    <div class="logo text-center text-lg-start col-lg-4">
                         <h1 class="logo">GJT</h1>
                     </div>
-                    <div class="col-md-8">
-                        <nav class="navbar ms-auto navbar-expand-lg">
-                            <div class="container-fluid justify-content-center">
+                    <div class="col-lg-8">
+                        <nav class="navbar mx-auto navbar-expand-lg">
+                            <div class="container-fluid justify-content-center justify-content-lg-end">
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav" aria-controls="#myNav" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -51,7 +51,7 @@
                 <div class="tint"></div>
                 <div class="my-container container">
                     <p>
-                        <span class="text1">Hi, I'm Garrett Terry</span>
+                        <span class="text1">Garrett Terry</span>
                         <span class="text2">A Junior developer at MS Coding Academy</span>
                     </p>
                 </div>
@@ -62,13 +62,12 @@
         <section class="section about-me pt-5" id="section1">
                 <div class="container ">
                     <div class="row my-row">
-                        <h2 class="about-sub text-capitalize">about me:</h2>
-                        <div class="col-7 col-md-6 yap">
-                            <img src="images/headshot.jpeg" alt="amazing headshot of Garrett Terry" class="img-fluid handsome  image"/>
+                        <h2 class="about-sub text-start text-md-center text-capitalize">about me:</h2>
+                        <div class=" text-sm-center col-lg-6 yap">
+                            <img src="images/headshot.jpeg" alt="amazing headshot of Garrett Terry" class="img-fluid handsome sm-mx-auto image"/>
                             <p class=" text-yap1">Being apart of the <a href="https://mscoding.org/" target="_blank" class="code-link">MS Coding Academy</a> I hope to be able to learn the fundamentals of coding and what it is like to be in the tech field even if it's just a small glimpse</p>
                         </div>
-                        <div class="col-4 col-md-6 yap">
-                            <img src="images/piano.png" alt="placeholder img" class="img-fluid d-none d-md-block p-img image"/>
+                        <div class=" col-lg-6 yap">
                             <p class=" text-yap2">Aside from coding, I enjoy reading and watching movies, i love to listen to music and finding new hobbies which is currently learning to play the piano which i will have mastered soon</p>
                         </div>
                     </div>
@@ -99,34 +98,56 @@
             <!-- card or figure h-100 on card or figure w-100 on img-->
             <div class="container">
                 <h2 class="h1 mb-3">Projects:</h2>
+                <div class="sub-contain d-flex">
+                    <p class="sub-text d-none d-lg-block">hover me</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-right my-arrow d-none d-lg-block" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4z"/>
+                    </svg>
+                </div>
                 <div class="row g-4">
                     <div class="col-md-6 img-row">
-                        <img src="images/detroixpic.png" alt="detroix landing page" class="image img-fluid img-img">
-                        <div class="img-overlay img-overlay-blur">
+                        <img src="images/detroixpic.png" id="detoix" alt="detroix landing page" class="image img-fluid img-img proj-img h-70 w-100">
+                        <h2 class="h4 git-sub">
+                            <a href="https://github.com/GarrettsHub/detroix2.0" target="_blank" class="git-link">Detroix</a>
+                        </h2>
+                        <p class="under-text text-capitalize">html, css, bootstrap</p>
+                        <div class="img-overlay text-center img-overlay-blur d-none d-lg-block">
                             <div class="img-title text-uppercase">detroix landing page</div>
                             <a href="https://github.com/GarrettsHub/detroix2.0" target="_blank" class="img-desc btn btn-dark" role="button">code</a>
                             <a href="https://garrettshub.github.io/detroix2.0/" target="_blank" class="img-desc btn btn-dark" role="button">website</a>
                         </div>
                     </div>
                     <div class="col-md-6 img-row">
-                        <img src="images/restpic.png" alt="detroix landing page" class="image img-fluid img-img h-100">
-                        <div class="img-overlay img-overlay-blur">
+                        <img src="images/restopic.png" id="restaurant" alt="detroix landing page" class="image img-fluid img-img proj-img w-100">
+                        <h2 class="h4 git-sub">
+                            <a href="https://github.com/GarrettsHub/restaurant" target="_blank"  class="git-link">Restaurant</a>
+                        </h2>
+                        <p class="under-text text-capitalize">html, css, bootstrap</p>
+                        <div class="img-overlay text-center img-overlay-blur d-none d-lg-block">
                             <div class="img-title text-uppercase">restaurant</div>
-                            <a href="https://github.com/GarrettsHub/venedor" target="_blank" class="img-desc btn btn-dark" role="button">code</a>
-                            <a href="#" target="_blank" class="img-desc btn btn-dark" role="button">website</a>
+                            <a href="https://github.com/GarrettsHub/restaurant" target="_blank" class="img-desc btn btn-dark" role="button">code</a>
+                            <a href="https://garrettshub.github.io/restaurant/" target="_blank" class="img-desc btn btn-dark" role="button">website</a>
                         </div>
                     </div>
                     <div class="col-md-6 img-row">
-                        <img src="images/venedorpic.png" alt="detroix landing page" class="image img-fluid img-img h-100">
-                        <div class="img-overlay img-overlay-blur">
+                        <img src="images/venedorpic.png" id="venedor" alt="detroix landing page" class="image img-fluid img-img proj-img w-100">
+                        <h2 class="h4 git-sub">
+                            <a href="https://github.com/GarrettsHub/venedor" target="_blank" class="git-link">Venedor</a>
+                        </h2>
+                        <p class="under-text text-capitalize">html, css</p>
+                        <div class="img-overlay img-overlay-blur d-none text-center d-lg-block">
                             <div class="img-title text-uppercase">venedor</div>
                             <a href="https://github.com/GarrettsHub/venedor" target="_blank" class="img-desc btn btn-dark" role="button">code</a>
-                            <a href="#" target="_blank" class="img-desc btn btn-dark" role="button">website</a>
+                            <a href="https://garrettshub.github.io/venedor/" target="_blank" class="img-desc btn btn-dark" role="button">website</a>
                         </div>
                     </div>
-                    <div class="col-md-6 img-row">
-                        <img src="images/bloompic.png" alt="detroix landing page" class="image img-fluid img-img h-100">
-                        <div class="img-overlay img-overlay-blur">
+                    <div class="d-none d-md-block col-md-6 img-row">
+                        <img src="images/bloompic.png" id="bloom" alt="detroix landing page" class="image img-fluid img-img proj-img w-100">
+                        <h2 class="h5 git-sub">
+                            <a href="#" class="git-link">Bloom</a>
+                        </h2>
+                        <p class="under-text text-capitalize">html, css</p>
+                        <div class="img-overlay text-center img-overlay-blur d-none d-lg-block">
                             <div class="img-title text-uppercase">bloom landing page</div>
                             <a href="#" target="_blank" class="img-desc btn btn-dark" role="button">code</a>
                             <a href="#" target="_blank" class="img-desc btn btn-dark" role="button">website</a>
@@ -165,6 +186,12 @@
                                 <span class="visually-hidden">linkedin</span>
                             </a>
                         </nav>
+                    </div>
+                    <div class="mail-box text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi text-light bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                        </svg>
+                        <a href="mailto: terry.jgarrett@gmail.com" class="my-mail text-light">terry.jgarrett@gmail.com</a>
                     </div>
                 </div>
             </div>

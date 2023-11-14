@@ -23,11 +23,23 @@ body {
     opacity: .55;
 }
 
+@media (min-width:769px) {
+
+    #headSect1 {
+        background-color: #6E07F3;
+        height: 65px;
+        box-shadow: inset 0 0 4px black;
+    }
+
+}
+
 #headSect1 {
     background-color: #6E07F3;
-    height: 65px;
-    box-shadow: inset 0 0 4px black;
+    margin: 0;
+    padding: 0;
+    /* height: 65px; */
 }
+
 
 .logo, .top-nav {
     color: whitesmoke;
@@ -72,7 +84,7 @@ main {
 }
 
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     .my-container {
         position: absolute;
         text-align: center;
@@ -154,12 +166,19 @@ main {
 }
 
 @media (max-width:768px) {
-    .text-yap1, .text-yap2 {
-        width: 45%;
+
+    #section1 {
+        padding: 50px 25px;
     }
+
 
     .handsome {
         border-radius: 35%;
+        
+    }
+
+    .yap {
+        flex-wrap: wrap;
     }
 }
 
@@ -195,9 +214,69 @@ main {
     .text-yap1 {
         position: absolute;
         top: 15px;
-        font-size: 22px;
+        width: 100%;
+    }
+
+    .text-yap2 {
+        position: absolute;
+        bottom: 20px;
         width: 50%;
     }
+
+}
+
+@media (min-width:769px) {
+        .handsome {
+            position: absolute;
+            width: 340px;
+            height: auto;
+            right: 0;
+            bottom: -30px;
+            border-radius: 35%;
+            margin-bottom: 40px;
+        }
+
+
+        .about-sub {
+            position: absolute;
+            top: -35px;
+        }
+
+
+        .about-me {
+            box-shadow: inset 0 0 4px black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .my-row {
+            position: relative;
+            height: 400px;
+        }
+
+        .text-yap1 {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 50%;
+        }
+
+        .text-yap2 {
+            position: absolute;
+            width: 50%;
+            left: 0;
+            bottom: 20px;
+    }
+}
+
+.text-yap1, .text-yap2 {
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.about-me {
+    box-shadow: inset 0 0 4px black;
+    margin: 0;
+    padding: 0;
 }
 
 .code-link {
@@ -211,11 +290,6 @@ main {
     color: crimson;
 }
 
-.text-yap2 {
-    position: absolute;
-    bottom: 20px;
-    font-size: 22px;
-}
 
 .p-img {
     position: absolute;
@@ -256,62 +330,93 @@ main {
     padding: 15px 0 60px 0;
 }
 
-/* youtube link on how i achieved the hover overlay: https://youtu.be/exb2ab72Xhs?si=zpng3f09uxr_B4Ip */
 
-.img-row {
-    position: relative;
-    /* width: 400px; */
+.my-arrow {
+    transform: rotate(90deg);
+    margin: 7px 0 0 4px;
 }
 
+.git-sub {
+    margin-top: 25px;
+}
+
+.git-link {
+    color: crimson;
+}
+
+/* youtube link on how i achieved the hover overlay: https://youtu.be/exb2ab72Xhs?si=zpng3f09uxr_B4Ip */
+
 .img-img {
-    display: block;
-    width: 600px;
-    height: auto;
     border: 5px solid black;
 }
 
-.img-overlay {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    width: 600px;
-    height: 100%;
-    background: #00000060;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-}
+@media (min-width:769px) {
 
-.img-overlay-blur {
-    backdrop-filter: blur(5px);
-}
+    .proj-img {
+        /* width: 600px; */
+        height: auto;
+    }
+    
+    .img-row {
+        position: relative;
+        /* width: 400px; */
+    }
+    
+    .img-img {
+        display: block;
+        width: 600px;
+        height: auto;
+        border: 5px solid black;
+    }
+    
+    .img-overlay {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        width: 635px;
+        height: 325px;
+        background: #00000060;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    
+    .img-overlay-blur {
+        backdrop-filter: blur(5px);
+    }
+    
+    .img-overlay > * {
+        transform: translateX(-20px);
+        transition: transform 0.25s;
+    }
+    
+    .img-overlay:hover {
+        opacity: 1;
+    }
+    
+    .img-overlay:hover > * {
+        transform: translateX(0);
+    }
+    
+    .img-title {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    .img-desc {
+        color: white;
+        font-size: 1.25em;
+        margin-top: 0.25em;
+    }
 
-.img-overlay > * {
-    transform: translateX(-20px);
-    transition: transform 0.25s;
-}
+    .img-title, .img-desc {
+        margin-top: 45px;
+    }
 
-.img-overlay:hover {
-    opacity: 1;
-}
-
-.img-overlay:hover > * {
-    transform: translateX(0);
-}
-
-.img-title {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.img-desc {
-    color: white;
-    font-size: 1.25em;
-    margin-top: 0.25em;
 }
 
 #footSection {
@@ -327,13 +432,3 @@ main {
 .my-icon {
     color: whitesmoke;
 }
-
-/* .social-link {
-    transition: 0.6s ease;
-}
-
-.social-link:hover {
-    width: 36px;
-    height: 36px;
-    color: crimson;
-} */
