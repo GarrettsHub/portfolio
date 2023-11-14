@@ -27,7 +27,6 @@ body {
 
     #headSect1 {
         background-color: #6E07F3;
-        height: 65px;
         box-shadow: inset 0 0 4px black;
     }
 
@@ -341,7 +340,11 @@ main {
 }
 
 .git-link {
-    color: crimson;
+    color: #6E07F3;
+}
+
+.under-text {
+    color: #6E07F3;
 }
 
 /* youtube link on how i achieved the hover overlay: https://youtu.be/exb2ab72Xhs?si=zpng3f09uxr_B4Ip */
